@@ -8,7 +8,6 @@ API REST robusta desarrollada con **Node.js**, **Express** y **MongoDB (Mongoose
 
 - **Materia / Curso:** Desarrollo Web Backend / Programación Web
 - **Actividad:** Catálogo de productos con favoritos y acceso por roles (Semana 10 - Tarea 2)
-- **Modalidad:** Individual (indicación docente)
 - **Estudiante / Desarrollador:** Darly (Darly23)
 - **Repositorio Público en GitHub:** [https://github.com/Darly23/S10-TAREA_2](https://github.com/Darly23/S10-TAREA_2)
 
