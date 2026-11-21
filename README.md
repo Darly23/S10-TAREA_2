@@ -163,21 +163,7 @@ npm test
 
 ---
 
-##  Mecanismo de Autenticación y Autorización (RBAC)
-
-```mermaid
-flowchart TD
-    Cliente[Cliente HTTP / Postman] -->|Petición| Servidor[Express API]
-    Servidor --> Ruta{¿Ruta Protegida?}
-    Ruta -- No (GET /productos) --> Publico[Ejecutar Controlador Público]
-    Ruta -- Sí --> AuthMid[authMiddleware: Verificar Bearer JWT]
-    AuthMid -- Token ausente o expirado --> Resp401[401 Unauthorized]
-    AuthMid -- Token Válido --> RolMid{¿Requiere Rol Admin?}
-    RolMid -- No (Rutas /favoritos) --> FavController[favoriteController: Usuario = req.user.id]
-    RolMid -- Sí (POST/PUT/DELETE /productos) --> CheckAdmin{req.user.rol === 'administrador'}
-    CheckAdmin -- No --> Resp403[403 Forbidden]
-    CheckAdmin -- Sí --> AdminController[productController: Operación CRUD]
-```
+## 
 
 1. **Hash de contraseñas:** Implementado mediante `bcryptjs` con 10 rondas de salt antes de persistir en MongoDB.
 2. **Protección de salida de datos:** Los modelos eliminan automáticamente la propiedad `password` en el método `.toJSON()`, garantizando que **jamás se expongan contraseñas ni sus hashes**.
