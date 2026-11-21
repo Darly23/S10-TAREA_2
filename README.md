@@ -4,7 +4,7 @@ API REST robusta desarrollada con **Node.js**, **Express** y **MongoDB (Mongoose
 
 ---
 
-## 👥 Información del Proyecto
+##  Información del Proyecto
 
 - **Materia / Curso:** Desarrollo Web Backend / Programación Web
 - **Actividad:** Catálogo de productos con favoritos y acceso por roles (Semana 10 - Tarea 2)
@@ -13,7 +13,7 @@ API REST robusta desarrollada con **Node.js**, **Express** y **MongoDB (Mongoose
 
 ---
 
-## 🎯 Propósito del Proyecto
+##  Propósito del Proyecto
 
 El propósito de esta API es ofrecer un servicio backend seguro, escalable y modular para un comercio electrónico o plataforma de catálogo, donde coexisten dos niveles de acceso claramente delimitados:
 1. **Público general / Clientes:** Pueden explorar el catálogo de productos y filtrar por categoría sin necesidad de registrarse.
@@ -22,7 +22,7 @@ El propósito de esta API es ofrecer un servicio backend seguro, escalable y mod
 
 ---
 
-## 🗄️ Elección y Justificación de la Base de Datos
+##  Elección y Justificación de la Base de Datos
 
 Se evaluaron las dos alternativas propuestas por la cátedra (**MongoDB con Mongoose** frente a **PostgreSQL con pg**) y se seleccionó formalmente **MongoDB con Mongoose** por las siguientes razones técnicas:
 
@@ -38,7 +38,7 @@ Se evaluaron las dos alternativas propuestas por la cátedra (**MongoDB con Mong
 
 ---
 
-## 🏗️ Arquitectura y Estructura del Proyecto
+##  Arquitectura y Estructura del Proyecto
 
 El proyecto sigue una arquitectura en capas (**MVC - Rutas, Controladores, Modelos y Middlewares**), garantizando separación de responsabilidades y alta mantenibilidad:
 
@@ -84,7 +84,7 @@ S10-TAREA_2/
 
 ---
 
-## ⚙️ Requisitos Previos
+##  Requisitos Previos
 
 - **Node.js:** Versión 18.x o superior (verificar con `node -v`).
 - **NPM:** Gestor de paquetes de Node (verificar con `npm -v`).
@@ -93,7 +93,7 @@ S10-TAREA_2/
 
 ---
 
-## 🚀 Instalación y Puesta en Marcha
+##  Instalación y Puesta en Marcha
 
 ### 1. Clonar el Repositorio
 ```bash
@@ -163,7 +163,7 @@ npm test
 
 ---
 
-## 🔐 Mecanismo de Autenticación y Autorización (RBAC)
+##  Mecanismo de Autenticación y Autorización (RBAC)
 
 ```mermaid
 flowchart TD
@@ -187,7 +187,7 @@ flowchart TD
 
 ---
 
-## 📋 Catálogo de Endpoints y Documentación de la API
+##  Catálogo de Endpoints y Documentación de la API
 
 La API acepta tanto rutas con prefijo `/api` como sin él (`/api/productos` o `/productos`).
 
@@ -393,7 +393,7 @@ Todas las rutas de favoritos requieren cabecera `Authorization: Bearer <TOKEN>`.
 
 ---
 
-## 🧪 Pruebas Obligatorias con Postman
+##  Pruebas Obligatorias con Postman
 
 En la carpeta [`postman/`](./postman/) se incluyen los dos archivos listos para importar:
 1. **Colección:** [`Catalogo_Productos_API.postman_collection.json`](./postman/Catalogo_Productos_API.postman_collection.json)
@@ -413,7 +413,7 @@ En la carpeta [`postman/`](./postman/) se incluyen los dos archivos listos para 
 
 ---
 
-## 🛡️ Criterio de Códigos de Estado HTTP Utilizados
+##  Criterio de Códigos de Estado HTTP Utilizados
 
 | Código HTTP | Nombre | Criterio y Contexto de Uso en la API |
 | :---: | :--- | :--- |
@@ -425,8 +425,5 @@ En la carpeta [`postman/`](./postman/) se incluyen los dos archivos listos para 
 | **`404 Not Found`** | No Encontrado | Recurso solicitado inexistente (producto no existe en catálogo o favorito no existe en la lista del usuario). |
 | **`409 Conflict`** | Conflicto | Infracción de restricción de unicidad: intento de registrar un correo ya existente o agregar un producto que ya es favorito. |
 
----
 
-## 📹 Video Explicativo
 
-- **Enlace al video:** [Ver video explicativo](ENLACE_AL_VIDEO_AQUI)
